@@ -1,0 +1,8 @@
+CREATE USER 'tp_trello'@'%' IDENTIFIED WITH mysql_native_password AS '***';GRANT USAGE ON *.* TO 'tp_trello'@'%' REQUIRE NONE WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;CREATE DATABASE IF NOT EXISTS `tp_trello`;GRANT ALL PRIVILEGES ON `tp\_trello`.* TO 'tp_trello'@'%';
+
+
+CREATE TABLE `tp_trello`.`utilisateur` ( `id` INT NOT NULL , `user` VARCHAR(200) NOT NULL , `password` VARCHAR(200) NOT NULL , `nom` VARCHAR(200) NOT NULL , `prenom` VARCHAR(200) NOT NULL , `email` VARCHAR(200) NOT NULL ) ENGINE = InnoDB;
+
+
+CREATE TABLE `tp_trello`.`taches` ( `titre` VARCHAR(200) NOT NULL , `a faire` VARCHAR(200) NOT NULL , `assigné` VARCHAR(200) NOT NULL , `en cour` VARCHAR(200) NOT NULL , `terminer` VARCHAR(200) NOT NULL , `abandoner` VARCHAR(200) NOT NULL ) ENGINE = InnoDB;
+
