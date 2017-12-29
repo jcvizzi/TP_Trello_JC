@@ -1,0 +1,19 @@
+h1 {
+    color: crimson;
+    text-align: center;
+}
+
+button {
+    text-align: center;
+}
+
+#logo {
+    height: 100px;
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 10px;
+}
+
+#welcome {
+    padding-top: 10px;
+}
